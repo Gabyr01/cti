@@ -8,3 +8,9 @@
 # Implementation:
 # Review:
 # Evaluate #Time: 
+import math
+
+hourDegree=input("Insert hour in degrees =")
+#360/12 = 30 --> every hour has 30 degrees
+rule=int(hourDegree)%30*12
+print("The result = ",rule)

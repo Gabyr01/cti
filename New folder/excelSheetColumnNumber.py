@@ -21,18 +21,18 @@
 
 
 
-# def columnNumber(letter):
-#     sum = 0
-#     MAX = len(letter)
-#     for i in range(MAX):
-#         s = letter[-(i+1)]
-#         print( s)
-#         # letter = letter[:-1]
-#         num = ord(s) - ord('A')
-#         num = int(num+1)
-#         sum = sum + (26**i *num)
+def columnNum(letter):
+    sum = 0
+    MAX = len(letter)
+    for i in range(MAX):
+        s = letter[-(i+1)]
+        print( s)
+        # letter = letter[:-1]
+        num = ord(s) - ord('A')
+        num = int(num+1)
+        sum = sum + (26**i *num)
         
-#     return sum
+    return sum
         
 def columnNumber(letter):
     result = 0
@@ -42,8 +42,11 @@ def columnNumber(letter):
         # letter = letter[:-1]
         num = ord(i) - ord('A')
         num = int(num+1)
+        # print("result: %s , num: %s \n" %(result, num))
         result = result *26+num
+        
         
     return result
     
-print(columnNumber('AAC'))
+print(columnNumber('ZZZ'))
+print(columnNum('ZZZ'))
